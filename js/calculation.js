@@ -7,6 +7,7 @@ var output_line_node=document.getElementById("output_line");
 var cost = 0;
 
 
+
 function calculateInsurance(){
    switch(true) {
         case input_country.value == "Austria":
@@ -22,9 +23,15 @@ function calculateInsurance(){
             cost = "ERROR";
       }
       cost = Math.ceil(cost);
+      
+    
+      
+
       output_line_node.style.visibility = "visible";
       output_line_node.innerHTML = input_name_node.value + ", your insurance costs " + cost + "€"; 
+    
       
 }
 
 input_button_node.addEventListener("click", calculateInsurance, false);
+
