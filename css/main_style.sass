@@ -46,14 +46,9 @@ footer
     width: 100%
     display: flex
     flex-wrap: wrap
-    justify-content: space-between
-    left: 0
-    right: 0
-    margin: auto
     padding-top: 7%
     min-height: 300px
     
-
 
 .vertical_info_box
     background-color: #FFFFFF
@@ -70,6 +65,12 @@ footer
     box-shadow: 5px 5px #383838
     min-width: 205px
 
+.vertical_info_box ul
+  list-style: none;
+
+.vertical_info_box ul li:before
+    margin-right: 3%;
+    content: "✔"
 
 .info_box_heading_1
     margin-top: 8%
@@ -191,12 +192,11 @@ input[type=text], select
     font-family: 'Roboto Condensed', sans-serif
     font-weight: bold
     color: #2C2C2C
-    
+     
 
 .input_boxes p
     margin-left: 1.5%
-
-
+    
 #input_box_heading
     width: 50%
     font-family: 'Roboto Condensed', sans-serif
